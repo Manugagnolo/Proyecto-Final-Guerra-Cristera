@@ -1120,7 +1120,7 @@ tabla_bigramas_final_real
 
 ```
 
-Según los Bi-gramas analizados, se detectaron 15 únicos,  aplicando los filtros correspondientes, lexicones según la época se obtuvieron que de las 15 categorías obtenidas valga la redundancia en su totalidad las 15 caben en "otras temáticas", lo que indicaría varios factores, primero que el nivel de los filtros aun no es tan granular, o que debemos rechazar la hipótesis nula , en la cual planteamos la presencia de autoritarismos y de sentimientos negativos en el periodo y aceptar la hipótesis alternativa de no presencia de lo anterior, sin embargo aun tocaría analizar el apartado de los sentimientos y su contexto analizado.
+Según los Bi-gramas analizados, se detectaron 15,  aplicando los filtros correspondientes, lexicones según la época se obtuvieron que de las 15 categorías obtenidas caben en "otras temáticas", lo que indicaría varios factores, primero que el nivel de los filtros aun no es tan granular, o que debemos rechazar la hipótesis nula , en la cual planteamos la presencia de autoritarismos y de sentimientos negativos en el periodo y aceptar la hipótesis alternativa de no presencia de lo anterior, sin embargo aun debemos analizar el apartado de los sentimientos y su contexto analizado.
 
 
 ```{r, include=FALSE}
@@ -1403,7 +1403,7 @@ suppressSpecificWarnings({
 ```{r}
 crear_viz_sentimientos(sentimientos_evolucion, interactive = T)
 ```
-La anterior tabla muestra la evolución temporal con el añadido que es por contexto de cada una. En ese orden de ideas podemos denotar con el color verde la emoción positiva con un contexto social, que tuvo una tendencia creciente del 1926 hasta 1927, mientras que desde 1927 hasta 1928 su comportamiento fue decreciente, lo cual apunta a confirmar la hipótesis planteada, la cual pasa de 1926 de 60% a 1927 a 98% y a 1928 a 80% .
+La tabla muestra la evolución temporal con el añadido que es por contexto de cada una. En ese orden de ideas podemos denotar con el color verde la emoción positiva con un contexto social, que tuvo una tendencia creciente del 1926 hasta 1927, mientras que desde 1927 hasta 1928 su comportamiento fue decreciente, lo cual apunta a confirmar la hipótesis planteada, la cual pasa de 1926 de 60% a 1927 a 98% y a 1928 a 80% .
 
 Por otro lado el contexto negativo - político, se mantuvo constante con una tendencia creciente desde 1926 hasta 1928 en la guerra decretada a la religión por plutarco elias calle, pasando de una constante de 1926 de 15% a 1928 a 25%.
 
@@ -1475,7 +1475,7 @@ p_polarizacion
 plotly::ggplotly(p_polarizacion)
 ```
 
-El anterior gráfico muestra la evolución de la polarización y el balance emocional en el periodo estudiado que va desde 1926 hasta 1928, lo que indica que la polarización analizada en los textos es de  100 desde 1926 hasta 1928,  mientras que el balance emocional tuvo una tendencia creciente de 1926 hasta 1927, mientras que desde 1927 hasta 1928 tuvo una tendencia decreciente negativa, obteniendo una diversidad en 1926 de 30%, en 1927 de 10% y en 1928 del 20%. Lo anterior quiere decir que en el periodo estudiado el estado jugo un papel polarizador en el tema estudiado, mostrando un balance emocional creciente en el primer año del estudio, convirtiendo una estructura de decreciente moral del 1927 hasta 1928.
+El gráfico muestra la evolución de la polarización y el balance emocional en el periodo estudiado que va desde 1926 hasta 1928, lo que indica que la polarización analizada en los textos es de  100 desde 1926 hasta 1928,  mientras que el balance emocional tuvo una tendencia creciente de 1926 hasta 1927, mientras que desde 1927 hasta 1928 tuvo una tendencia decreciente negativa, obteniendo una diversidad en 1926 de 30%, en 1927 de 10% y en 1928 del 20%. Lo anterior quiere decir que en el periodo estudiado el estado jugo un papel polarizador en el tema estudiado, mostrando un balance emocional creciente en el primer año del estudio, convirtiendo una estructura de decreciente moral del 1927 hasta 1928.
 
 ```{r, include=FALSE}
 # =============================================================================
